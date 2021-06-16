@@ -1,0 +1,17 @@
+.complete {
+  text-decoration: line-through;
+}
+
+.App {
+  margin-top: 4vh;
+  margin-left: 4vw;
+}
+
+.ClearTodo {
+  color: darkcyan;
+  cursor: pointer;
+}
+
+.ClearTodo:hover {
+  color: darkblue;
+}
