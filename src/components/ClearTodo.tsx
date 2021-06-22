@@ -9,6 +9,8 @@ export const ClearTodo: React.FC<IClearTodoOwnProps> = ({ clearTodo }): JSX.Elem
   }
 
   return (
-    <label className="ClearTodo"><small onClick={() => {handleClick()}}>clear completed todo</small></label>
+    <div className="ClearTodo">
+      <label><small onClick={() => {handleClick()}}>clear completed todo</small></label>
+    </div>
   )
 }

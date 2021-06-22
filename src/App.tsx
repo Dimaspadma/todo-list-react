@@ -2,6 +2,7 @@ import { useState } from "react";
 import { AddTodoForm } from "./components/AddTodoForm";
 import { ClearTodo } from "./components/ClearTodo";
 import { TodoList } from "./components/TodoList";
+import { Greeting } from "./components/Greeting";
 import "./styles/App.css";
 
 const initialTodos: Array<Todo> = [
@@ -39,6 +40,7 @@ const App: React.FC = (): JSX.Element => {
 
   return (
     <div className="App">
+      <Greeting />
       <TodoList todos={todos} toggleTodo={toggleTodo} />
       <AddTodoForm addTodo={addTodo} />
       <ClearTodo clearTodo={clearTodo} />

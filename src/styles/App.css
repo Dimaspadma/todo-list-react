@@ -9,6 +9,8 @@
 
 .ClearTodo {
   color: darkcyan;
+}
+.ClearTodo label {
   cursor: pointer;
 }
 

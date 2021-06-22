@@ -8,8 +8,10 @@ interface ITodoListOwnProps {
 export const TodoList: React.FC<ITodoListOwnProps> = ({todos, toggleTodo}): JSX.Element => {
 
   return (
-    <ul>
-      {todos.map( todo => <TodoListItem key={todo.text} todo={todo} toggleTodo={toggleTodo} /> )}
-    </ul>
+    <div className='TodoList'>
+      <ul>
+        {todos.map( todo => <TodoListItem key={todo.text} todo={todo} toggleTodo={toggleTodo} /> )}
+      </ul>
+    </div>
   )
 }
