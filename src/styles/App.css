@@ -1,11 +1,75 @@
-.complete {
-  text-decoration: line-through;
+.App {
+  margin: 40px;
 }
 
-.App {
-  margin-top: 4vh;
-  margin-left: 4vw;
+.AddTodoForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px 5vw;
 }
+.AddTodoForm input {
+  display: block;
+  width: 80vmin;
+  height: 50px;
+  border: 1px solid #c4c4c4;
+  border-radius: 2vw;
+  padding: 0 2vw;
+  box-sizing: border-box;
+  font-size: 1.05em;
+  color: #525252;
+}
+.AddTodoForm input:focus {
+  outline: none;
+}
+.AddTodoForm button {
+  display: block;
+  margin: 30px auto 0;
+  background-color: #525252;
+  border: none;
+  width: 30%;
+  height: 50px;
+  border-radius: 4vw;
+  font-size: 1.2em;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.AddTodoForm button:hover {
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+
+.TodoList {
+  overflow: hidden;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.TodoListItem {
+  border: 1px solid #c4c4c4;
+  padding: 17px;
+  box-sizing: border-box;
+  color: #525252;
+  font-size: 1.1em;
+  display: flex;
+}
+.Checkbox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #525252;
+  margin-right: 3vw;
+}
+.CheckboxComplete {
+  background-color: #a9a9a9;
+  border-color: #a9a9a9;
+}
+
+.complete {
+  text-decoration: line-through;
+  color: #a9a9a9;
+}
+
 
 .ClearTodo {
   color: darkcyan;

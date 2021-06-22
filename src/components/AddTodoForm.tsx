@@ -21,8 +21,13 @@ export const AddTodoForm: React.FC<IAddTodoFormOwnProps> = ({ addTodo }): JSX.El
   return (
     <div className='AddTodoForm'>
       <form>
-        <input type="text" value={newTodo} onChange={handleChange} />
-        <button type="submit" onClick={handleClick} >Add Todo</button>
+        <input 
+          type="text" 
+          placeholder="What will you doing..."
+          value={newTodo} 
+          onChange={handleChange} 
+        />
+        <button type="submit" onClick={handleClick} >Add</button>
       </form>
     </div>
   )

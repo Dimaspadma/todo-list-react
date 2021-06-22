@@ -1,3 +1,5 @@
+import Checkbox from './Checkbox'
+
 interface ITodoListItemOwnProps {
   todo: Todo;
   toggleTodo: ToggleTodo;
@@ -5,11 +7,13 @@ interface ITodoListItemOwnProps {
 
 export const TodoListItem: React.FC<ITodoListItemOwnProps> = ({ todo, toggleTodo }): JSX.Element => {
   return (
-    <li>
-      <label className={todo.complete ? 'complete' : ''}>
-        <input type="checkbox" checked={todo.complete} onChange={() => toggleTodo(todo)} />
+    <div className='TodoListItem'>
+      <Checkbox checked={todo.complete} toggleTodo={toggleTodo} todo={todo} />
+      <label className={todo.complete ? 'complete' : ''}
+        onClick={() => toggleTodo(todo)}
+      >
         {todo.text}
       </label>
-    </li>
+    </div>
   )
 }

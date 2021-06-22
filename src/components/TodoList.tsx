@@ -9,9 +9,7 @@ export const TodoList: React.FC<ITodoListOwnProps> = ({todos, toggleTodo}): JSX.
 
   return (
     <div className='TodoList'>
-      <ul>
-        {todos.map( todo => <TodoListItem key={todo.text} todo={todo} toggleTodo={toggleTodo} /> )}
-      </ul>
+      {todos.map( todo => <TodoListItem key={todo.text} todo={todo} toggleTodo={toggleTodo} /> )}
     </div>
   )
 }
